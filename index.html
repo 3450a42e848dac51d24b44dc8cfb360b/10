@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title> Physics </title>
+</head>
+
+<body onload="setup()">
+  <div class="params-holder">
+    <div class="param">
+      <div class="text"> Длина волны (нм) </div>
+      <input size="4" type="number" step="any" id="lambda" class="input" />
+    </div>
+    <div class="param">
+      <div class="text"> Количество щелей </div>
+      <input size="4" type="number" step="any" id="n" class="input" />
+    </div>
+    <div class="param">
+      <div class="text"> Размер щели (мкм) </div>
+      <input size="4" type="number" step="any" id="a" class="input" />
+    </div>
+    <div class="param">
+      <div class="text"> Период дифракционной решетки (мкм) </div>
+      <input size="4" type="number" step="any" id="d" class="input" />
+    </div>
+    <div class="param">
+      <button class="button" id="run" onclick="run()">
+        Построить график
+      </button>
+    </div>
+  </div>
+
+  <div class="canvas-holder">
+    <canvas id="canvas" />
+  </div>
+
+  <div class="footer">
+    <div class="heading"> <b> Источники информации </b> </div>
+    <ul>
+      <li> Википедия (<a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B8%D1%84%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F_%D0%BD%D0%B0_N_%D1%89%D0%B5%D0%BB%D1%8F%D1%85">ссылка</a>)</li>
+    </ul>
+
+    Исходный код доступ на <a href="https://github.com/3450a42e848dac51d24b44dc8cfb360b/10">github</a>.
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.0.1/chartjs-plugin-annotation.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
